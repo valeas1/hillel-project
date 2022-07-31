@@ -1,0 +1,118 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__wrap {
+        background-color: var(--grey);
+    }
+    &__border {
+        border-top: 2px solid var(--grey-separator);
+    }
+    &__block-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__block-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__adress {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--main);
+        margin-bottom: 10px;
+    }
+    &__map {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--active-regular);
+        margin-bottom: 21px;
+    }
+    &__facebook {
+        margin-bottom: 10px;
+        path {
+            transition: 300ms;
+        }
+        &:hover path {
+            fill: var(--accent);
+        }
+    }
+    &__tel {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--main-alt);
+        margin-bottom: 10px;
+    }
+    &__email {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--active-regular);
+        margin-bottom: 30px;
+        transition: 300ms;
+        &:hover {
+            color: var(--accent);
+        }
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--grey-text);
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 55% 1fr;
+        &__block-one {
+            flex-direction: row;
+            margin-bottom: 21px;
+        }
+        &__block-two {
+            flex-direction: row;
+        }
+        &__adress {
+            margin: 0;
+        }
+        &__map {
+            margin: 0;
+        }
+        &__facebook {
+            margin: 0;
+        }
+        &__tel {
+            margin: 0;
+        }
+        &__email {
+            margin: 0;
+        }
+        &__copyright {
+            margin: 0;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            justify-self: end;
+            align-self: baseline;
+        }
+        &--circle::before {
+            content: '';
+            display: inline-flex;
+            position: relative;
+            margin: 0 6px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--grey-text);
+            top:-2px;
+        }
+    }
+}

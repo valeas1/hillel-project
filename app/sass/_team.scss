@@ -29,6 +29,7 @@
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: var(--active-regular);
+                transition: 300ms;
                 &::after {
                     content: '';
                     position: relative;
@@ -89,6 +90,7 @@
             background-color: var(--active-regular);
             opacity: 0.2;
             margin-right: 15px;
+            transition: 300ms;
             &:hover {
                 opacity: 0.6;
             }
