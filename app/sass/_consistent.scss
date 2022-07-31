@@ -1,0 +1,99 @@
+.consistent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &__nav {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        padding-bottom: 30px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+        &::-webkit-scrollbar { 
+            width: 0px; 
+        }
+        &-btn {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: var(--grey-text);
+            background-color: transparent;
+            border: none;
+            white-space: nowrap;
+            margin-right: 30px;
+            &:hover {
+                color: transparent;
+                background-clip: text;
+                background-image: var(--gradient-red-text);
+            }
+            &--active {
+                color: transparent;
+                background-clip: text;
+                background-image: var(--gradient-red-text);
+            }
+        }
+    }
+    &__arcticles {
+        padding-top: 30px;
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .consistent {
+        padding-top: 45px;
+        padding-bottom: 60px;
+        &__arcticles {
+            padding-top: 60px;
+            &-title {
+                font-size: 30px;
+                line-height: 37px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .consistent {
+        flex-direction: row;
+        &__nav {
+            width: 50%;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 16px 60px 16px 0;
+            border-bottom: none;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            &-btn {
+                margin-right: 0;
+                &:not(:last-child) {
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+        &__arcticles {
+            padding: 0 0 0 60px;
+            width: 50%;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .consistent {
+        &__nav {
+            width: 43%;
+        }
+    }
+}
