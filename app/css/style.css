@@ -439,6 +439,9 @@ a {
   .header__nav-menu-link--white:hover {
     border-bottom-color: var(--active-regular);
   }
+  .header__nav-menu .header__nav-menu-link--white-active:hover {
+    border-bottom-color: var(--accent);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1721,6 +1724,102 @@ a {
 @media screen and (min-width: 1024px) {
   .footer__block-one {
     margin-bottom: 18px;
+  }
+}
+
+.turn {
+  display: grid;
+  gap: 28px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.turn__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: transparent;
+  background: var(--gradient-red-text-l);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.turn__text {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.turn__progress {
+  padding: 0 30px;
+  border-left: 4px solid var(--grey-separator);
+}
+
+.turn__progress-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: transparent;
+  background: var(--gradient-red-text-l);
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin-bottom: 10px;
+}
+
+.turn__progress-title--01::before {
+  content: url(../img/turn-bg-img-01.svg);
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.turn__progress-title--02::before {
+  content: url(../img/turn-bg-img-02.svg);
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.turn__progress-title--03::before {
+  content: url(../img/turn-bg-img-03.svg);
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.turn__progress-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main);
+}
+
+.turn__progress-text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .turn__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .turn {
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .turn__progress {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .turn {
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
   }
 }
 

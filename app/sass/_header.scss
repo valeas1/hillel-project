@@ -287,10 +287,14 @@
                             color: var(--accent);
                             border-bottom-color: var(--accent);
                         }
+                        
                         &:hover {
                             border-bottom-color: var(--active-regular);
                         }
                     }
+                }
+                & &-link--white-active:hover {
+                    border-bottom-color: var(--accent);
                 }
             }
         }
