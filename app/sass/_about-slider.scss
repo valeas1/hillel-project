@@ -70,8 +70,6 @@
     .about-slider {
         &__main {
             grid-template-columns: repeat(4, 1fr);
-            &-card {
-            }
         }
         &__nav {
             &-btn.is-hidden {
