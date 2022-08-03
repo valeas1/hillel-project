@@ -1,0 +1,102 @@
+.about-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 60px;
+    &__wrap {
+        background-color: var(--grey);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--main);
+        margin-bottom: 30px;
+    }
+    &__main {
+        align-self: stretch;
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        gap: 40px;
+        overflow: auto;
+        margin-bottom: 30px;
+        &::-webkit-scrollbar { 
+            width: 0px; 
+        }
+        &-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 5px;
+            &-img {
+                height: 40px;
+                object-fit: cover;
+            }
+        }
+    }
+    &__nav {
+        &-btn {
+            cursor: pointer;
+            border: none;
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--active-regular);
+            opacity: 0.2;
+            transition: 300ms;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &:hover {
+                opacity: 0.6;
+            }
+            .about-slider__nav &--active {
+                opacity: 1;
+                &:hover {
+                    background-color: var(--active-regular);
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .about-slider {
+        &__main {
+            grid-template-columns: repeat(4, 1fr);
+            &-card {
+            }
+        }
+        &__nav {
+            &-btn.is-hidden {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .about-slider {
+        &__main {
+            &-card {
+                width: 196px;
+                height: 110px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .about-slider {
+        &__main {
+            &-card {
+                justify-self: stretch;
+                width: 100%;
+            }
+        }
+    }
+}

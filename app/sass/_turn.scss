@@ -75,7 +75,8 @@
 }
 @media screen and (min-width: 1440px) {
     .turn {
-        grid-template-columns: 55% 1fr;
+        width: 70%;
+        grid-template-columns: 60% 1fr;
         grid-template-rows: min-content min-content min-content;
     }
 }
