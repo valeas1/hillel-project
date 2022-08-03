@@ -157,13 +157,18 @@
                 font-size: 24px;
                 line-height: 29px;
                 text-align: center;
-                color: #24A3FF;
+                color: var(--active-regular);
                 padding: 7px 20px;
                 margin-bottom: 15px;
                 border-radius: 12px;
                 background-color: var(--grey);
                 &:active {
                     background-color: var(--grey-separator);
+                }
+                &--white {
+                    &-active {
+                        color: var(--accent);
+                    }
                 }
             }
         }

@@ -287,7 +287,7 @@ a {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #24A3FF;
+  color: var(--active-regular);
   padding: 7px 20px;
   margin-bottom: 15px;
   border-radius: 12px;
@@ -296,6 +296,10 @@ a {
 
 .header__nav-menu-link:active {
   background-color: var(--grey-separator);
+}
+
+.header__nav-menu-link--white-active {
+  color: var(--accent);
 }
 
 @media screen and (min-width: 768px) {
