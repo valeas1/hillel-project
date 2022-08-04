@@ -1,0 +1,97 @@
+.crew {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 30px;
+    }
+    &__grid {
+        display: grid;
+        gap: 30px;
+        &-card {
+            display: grid;
+            grid-template-columns: 80% 1fr;
+            grid-template-rows: min-content min-content min-content;
+            a {
+                grid-column: 1 / 3;
+            }
+            &-img {
+                grid-row: 1 / 2;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+            &-name {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: var(--main);
+            }
+            &-job-title {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: var(--grey-text);
+                margin-bottom: 5px;
+            }
+            &-link {
+                grid-column: 2 / 3;
+                grid-row: 2 /4;
+                align-self: start;
+                justify-self: end;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: var(--grey);
+                translate: 300ms;
+                &:hover path {
+                    stroke: var(--accent);
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .crew {
+        padding-top: 60px;
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            margin-bottom: 60px;
+        }
+        &__grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            &-card {
+                &-img {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .crew {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        &__title {
+            align-self: center;
+            width: 70%;
+        }
+        &__grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
