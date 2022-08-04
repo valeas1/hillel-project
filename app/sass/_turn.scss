@@ -1,7 +1,6 @@
 .turn {
     display: grid;
-    gap: 28px;
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 30px;
     &__title {
         font-weight: 700;
@@ -10,15 +9,18 @@
         color: transparent;
         background: var(--gradient-red-text-l);
         background-clip: text;
+        margin-bottom: 28px;
     }
     &__text {
         font-weight: 300;
-        font-size: 19px;
+        font-size: 20px;
         line-height: 30px;
+        margin-bottom: 20px;
     }
     &__progress {
-        padding: 0 30px;
+        padding-left: 33px;
         border-left: 4px solid var( --grey-separator);
+        margin-top: 11px;
         &-title {
             font-weight: 700;
             font-size: 36px;
@@ -30,17 +32,17 @@
             &--01::before {
                 content: url(../img/turn-bg-img-01.svg);
                 display: inline-block;
-                margin-right: 8px;
+                margin-right: 14px;
             }
             &--02::before {
                 content: url(../img/turn-bg-img-02.svg);
                 display: inline-block;
-                margin-right: 8px;
+                margin-right: 14px;
             }
             &--03::before {
                 content: url(../img/turn-bg-img-03.svg);
                 display: inline-block;
-                margin-right: 8px;
+                margin-right: 14px;
             }
         }
         &-text {
@@ -56,6 +58,8 @@
 }
 @media screen and (min-width: 768px) {
     .turn {
+        padding-top: 48px;
+        padding-bottom: 58px;
         &__title {
             font-size: 38px;
             line-height: 46px;
@@ -66,17 +70,21 @@
     .turn {
         grid-template-columns: 55% 1fr;
         grid-template-rows: min-content min-content min-content;
+        padding-bottom: 41px;
         &__progress {
             grid-column: 2 / 3;
             grid-row: 1 / 4;
             align-self: start;
+            margin-left: 19px;
+            margin-top: 0;
         }
     }
 }
 @media screen and (min-width: 1440px) {
     .turn {
-        width: 70%;
-        grid-template-columns: 60% 1fr;
+        width: 83%;
+        grid-template-columns: 62% 1fr;
         grid-template-rows: min-content min-content min-content;
+        padding-bottom: 12px;
     }
 }

@@ -22,7 +22,7 @@
         grid-template-columns: repeat(4, 100%);
         gap: 40px;
         overflow: auto;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
         &::-webkit-scrollbar { 
             width: 0px; 
         }
@@ -70,6 +70,7 @@
     .about-slider {
         &__main {
             grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 21px;
         }
         &__nav {
             &-btn.is-hidden {
@@ -84,12 +85,16 @@
             &-card {
                 width: 196px;
                 height: 110px;
+                &-img {
+                    height: 60px;
+                }
             }
         }
     }
 }
 @media screen and (min-width: 1024px) {
     .about-slider {
+        padding: 30px 30px;
         &__main {
             &-card {
                 justify-self: stretch;

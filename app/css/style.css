@@ -312,7 +312,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 38px;
-    padding: 40px 60px 0 60px;
+    padding: 40px 30px 0 30px;
   }
   .header__wrap {
     background-size: 893px 1024px, cover;
@@ -390,7 +390,11 @@ a {
   .header__logo-page::before {
     width: 6px;
     height: 47px;
-    bottom: -13px;
+    bottom: -12px;
+    margin-left: 12px;
+    margin-right: 10px;
+    -webkit-transform: skewX(343deg);
+            transform: skewX(343deg);
   }
   .header__nav-btn {
     display: none;
@@ -592,6 +596,7 @@ a {
       -ms-flex-align: start;
           align-items: start;
   width: 100%;
+  height: 100vh;
   background-color: var(--grey);
   padding: 30px;
   overflow: auto;
@@ -800,15 +805,15 @@ a {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    width: 650px;
-    height: 612px;
+    max-width: 650px;
+    max-height: 612px;
     -webkit-box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
             box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
     border-radius: 12px;
     left: 50%;
-    top: 20vh;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
 }
 
@@ -1733,8 +1738,7 @@ a {
 
 .turn {
   display: grid;
-  gap: 28px;
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 30px;
 }
 
@@ -1746,17 +1750,20 @@ a {
   background: var(--gradient-red-text-l);
   -webkit-background-clip: text;
           background-clip: text;
+  margin-bottom: 28px;
 }
 
 .turn__text {
   font-weight: 300;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .turn__progress {
-  padding: 0 30px;
+  padding-left: 33px;
   border-left: 4px solid var(--grey-separator);
+  margin-top: 11px;
 }
 
 .turn__progress-title {
@@ -1773,19 +1780,19 @@ a {
 .turn__progress-title--01::before {
   content: url(../img/turn-bg-img-01.svg);
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 14px;
 }
 
 .turn__progress-title--02::before {
   content: url(../img/turn-bg-img-02.svg);
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 14px;
 }
 
 .turn__progress-title--03::before {
   content: url(../img/turn-bg-img-03.svg);
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 14px;
 }
 
 .turn__progress-text {
@@ -1800,6 +1807,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .turn {
+    padding-top: 48px;
+    padding-bottom: 58px;
+  }
   .turn__title {
     font-size: 38px;
     line-height: 46px;
@@ -1811,20 +1822,24 @@ a {
     grid-template-columns: 55% 1fr;
     grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content min-content;
+    padding-bottom: 41px;
   }
   .turn__progress {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     align-self: start;
+    margin-left: 19px;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .turn {
-    width: 70%;
-    grid-template-columns: 60% 1fr;
+    width: 83%;
+    grid-template-columns: 62% 1fr;
     grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content min-content;
+    padding-bottom: 12px;
   }
 }
 
@@ -1871,14 +1886,14 @@ a {
 
 .about-team__main {
   display: grid;
-  gap: 30px;
 }
 
 .about-team__main-text {
   font-weight: 300;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 30px;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .about-team__main-title {
@@ -1889,6 +1904,7 @@ a {
   background: var(--gradient-red-text-l);
   -webkit-background-clip: text;
           background-clip: text;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1901,6 +1917,9 @@ a {
     line-height: 56px;
     letter-spacing: 63px;
   }
+  .about-team__main-text {
+    font-size: 19px;
+  }
   .about-team__main-title {
     font-size: 38px;
     line-height: 46px;
@@ -1908,6 +1927,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .about-team {
+    padding-bottom: 40px;
+  }
   .about-team__header {
     padding: 103px 0;
   }
@@ -1917,19 +1939,24 @@ a {
     letter-spacing: 63px;
   }
   .about-team__main {
-    grid-template-columns: 59% 1fr;
+    grid-template-columns: 60% 1fr;
     grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content min-content;
+  }
+  .about-team__main-text {
+    font-size: 20px;
+    margin-right: 60px;
   }
   .about-team__main-title {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about-team__header {
-    padding: 163px 0;
+    padding: 161px 0;
   }
   .about-team__header-title {
     font-size: 96px;
@@ -1937,7 +1964,11 @@ a {
     letter-spacing: 63px;
   }
   .about-team__main {
-    width: 70%;
+    width: 83%;
+    grid-template-columns: 66% 1fr;
+  }
+  .about-team__main-text {
+    font-size: 19px;
   }
 }
 
@@ -1976,7 +2007,7 @@ a {
   grid-template-columns: repeat(4, 100%);
   gap: 40px;
   overflow: auto;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .about-slider__main::-webkit-scrollbar {
@@ -2037,6 +2068,7 @@ a {
 @media screen and (min-width: 768px) {
   .about-slider__main {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 21px;
   }
   .about-slider__nav-btn.is-hidden {
     display: none;
@@ -2048,9 +2080,15 @@ a {
     width: 196px;
     height: 110px;
   }
+  .about-slider__main-card-img {
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .about-slider {
+    padding: 30px 30px;
+  }
   .about-slider__main-card {
     justify-self: stretch;
     width: 100%;
