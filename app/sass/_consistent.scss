@@ -111,6 +111,9 @@
 }
 @media screen and (min-width: 1440px) {
     .consistent {
+        max-width: 1380px;
+        margin: 0 auto;
+        padding: 45px 0 60px 0;
         &__nav {
             width: 43%;
         }

@@ -1,0 +1,139 @@
+.worker {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    &__img {
+        width: 100%;
+        height: 375px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-title {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            margin-bottom: 15px;
+        }
+        &-job-title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: var(--grey-text);
+            margin-bottom: 10px;
+        }
+        &-mail {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--active-regular);
+            margin-bottom: 10px;
+            &:hover {
+                color: var(--accent);
+            }
+        }
+        &-linked {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--active-regular);
+            margin-bottom: 30px;
+            &:hover {
+                color: var(--accent);
+            }
+        }
+    }
+    &__main {
+        padding-top: 30px;
+        border-top: 4px solid var(--grey-separator);
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--main);
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .worker {
+        display: grid;
+        grid-template-columns: 43% 1fr;
+        gap: 30px;
+        padding-top: 60px;
+        padding-bottom: 45px;
+        &__img {
+            margin: 0;
+        }
+        &__info {
+            align-self: center;
+        }
+        &__main {
+            grid-column: 1 / 3;
+        }
+
+    }
+}
+@media screen and (min-width: 1024px) {
+    .worker {
+        grid-template-columns: 31% 1fr;
+        gap: 30px 60px;
+        &__img {
+            grid-row: 1 / 3;
+        }
+        &__info {
+            &-linked {
+                margin: 0;
+            }
+        }
+        &__main {
+            grid-column: 2 / 3;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .worker {
+        width: 85%;
+        margin: 0 auto;
+        grid-template-columns: min-content 1fr;
+        &__img {
+            width: 400px;
+            height: 500px;
+        }
+        &__info {
+            flex-direction: row;
+            flex-wrap: wrap;
+            &-title {
+                width: 100%;
+            }
+            &-job-title {
+                margin-bottom: 0;
+            }
+            &-mail {
+                margin: 0;
+            }
+            &--circle::before {
+                content: '';
+                display: inline-flex;
+                position: relative;
+                margin: 0 10px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                top: -2px;
+                background-color: var(--grey-separator);
+            }
+        }
+    }
+}
