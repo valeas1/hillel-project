@@ -800,6 +800,8 @@ a {
   border-radius: 12px;
   padding: 18px;
   margin-top: 15px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .modal__form-btn:hover {
@@ -2402,6 +2404,136 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+}
+
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact__info {
+  margin-bottom: 31px;
+}
+
+.contact__info-adress {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--main);
+  padding-bottom: 30px;
+  border-bottom: 4px solid var(--grey-separator);
+}
+
+.contact__info-tel-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid var(--grey-separator);
+}
+
+.contact__info-tel {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--main-alt);
+  margin-bottom: 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contact__info-mail {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--active-regular);
+  margin-bottom: 30px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contact__info-mail:hover {
+  color: var(--accent);
+}
+
+.contact__info-facebook {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--active-regular);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.contact__info-facebook-img {
+  margin-right: 10px;
+}
+
+.contact__info-facebook-img path {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.contact__info-facebook:hover {
+  color: var(--accent);
+}
+
+.contact__info-facebook:hover path {
+  fill: var(--accent);
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  background-color: var(--grey);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 767px) {

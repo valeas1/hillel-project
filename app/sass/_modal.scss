@@ -102,6 +102,7 @@
             border-radius: 12px;
             padding: 18px;
             margin-top: 15px;
+            transition: 300ms;
             &:hover {
                 background-color: var(--acvtive-hover);
             }

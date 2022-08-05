@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <div class="page">
+        <div class="page">
         <header class="header conteiner">
             <div class="header__info header__info--white">
                 <a class="header__info-lang header__info-lang--white" href="#">ук</a>
@@ -26,7 +26,7 @@
                 <a href="index.html">
                     <img class="header__logo-img" src="img/logo--white.svg" alt="logo">
                 </a>
-                <span class="header__logo-page">team</span>
+                <span class="header__logo-page">contact</span>
             </div>
             <div class="header__nav">
                 <button class="header__nav-btn header__nav-btn--white" type="button">
@@ -45,54 +45,41 @@
                     </button>
                     <a class="header__nav-menu-link header__nav-menu-link--white" href="aboutus.html">about us</a>
                     <a class="header__nav-menu-link header__nav-menu-link--white" href="#">services</a>
-                    <a class="header__nav-menu-link header__nav-menu-link--white header__nav-menu-link--white-active" href="team.html">team</a>
+                    <a class="header__nav-menu-link header__nav-menu-link--white" href="team.html">team</a>
                     <a class="header__nav-menu-link header__nav-menu-link--white" href="#">publications</a>
-                    <a class="header__nav-menu-link header__nav-menu-link--white" href="contact.html">contact</a>
+                    <a class="header__nav-menu-link header__nav-menu-link--white header__nav-menu-link--white-active" href="contact.html">contact</a>
                 </nav>
             </div>
         </header>
         <main>
-            <div class="worker__wrap conteiner">
-                <section class="worker">
-                        <img class="worker__img" src="img/crew-card-img-05.jpg" srcset="img/crew-card-img-05@2x.jpg 2x" alt="Oksana">
-                        <div class="worker__info">
-                            <h1 class="title worker__info-title">
-                                Oksana Kobzar
-                            </h1>
-                            <p class="worker__info-job-title">Equity partner, Attorney-at-law</p>
-                            <a class="worker__info-mail worker__info--circle" href="mailto:kobzar@forstudy.space">kobzar@forstudy.space</a>
-                            <a class="worker__info-linked worker__info--circle" href="#">LinkedIn profile</a>
+            <div class="contact__wrap conteiner">
+                <section class="contact">
+                    <div class="contact__info">
+                        <p class="contact__info-adress">
+                            Kyiv,<br> Mechnikova str, 14
+                        </p>
+                        <div class="contact__info-tel-mail">
+                            <a class="contact__info-tel" href="tel:0800 211 927">0800 211 927</a>
+                            <a class="contact__info-mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
                         </div>
-                        <div class="worker__main">
-                            <p class="worker__main-text">
-                                Oksana heads the practice of international trade 
-                                and shipping. He specializes in resolving disputes 
-                                related to the purchase and sale of raw materials 
-                                and transportation of goods by sea.
-                            </p>
-                            <p class="worker__main-text">
-                                Desis represents the interests of shipowners, freight 
-                                forwarders, cargo owners, shipping agents, container 
-                                lines, as well as international banks and P&I clubs.
-                            </p>
-                            <p class="worker__main-title">
-                                Education
-                            </p>
-                            <p class="worker__main-text">
-                                National University "Odessa Law Academy", Master of Law.
-                            </p>
-                            <p class="worker__main-title">
-                                Experience
-                            </p>
-                            <p class="worker__main-text">
-                                Her professional experience includes resolving
-                                disputes under English law and representing interests 
-                                in foreign commercial arbitrations such as GAFTA, FOSFA 
-                                and LMAA. Danilo also represents the interests of clients 
-                                in the state courts of Ukraine on similar disputes, as well 
-                                as in the ICAC and IAC at the CCI of Ukraine
-                            </p>
-                        </div>
+                        <a  class="contact__info-facebook" href="#">
+                            <svg class="contact__info-facebook-img" width="38" height="38" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#24A3FF"/>
+                            </svg>
+                            Our page<br>on facebook
+                        </a>
+                    </div>
+                    <article class="contact__form">
+                        <h2 class="modal__title">We would like to help you</h2>
+                        <form class="modal__form" action="#">
+                            <input class="modal__form-input" type="text" name="name" placeholder="Name" required>
+                            <textarea class="modal__form-input modal__form-mgs" name="messange" placeholder="Messange" required></textarea>
+                            <p class="modal__form-subtitle">How to answer you?</p>
+                            <input class="modal__form-input"  type="tel" name="phone" placeholder="Phone number" required>
+                            <input class="modal__form-input" type="email" name="e-mail" placeholder="Email" required>
+                            <button class="modal__form-btn" type="submit">Send message</button>
+                        </form>
+                    </article>
                 </section>
             </div>
         </main>
