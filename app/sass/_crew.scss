@@ -1,5 +1,5 @@
 .crew {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 60px;
     &__title {
         font-weight: 700;
@@ -64,7 +64,7 @@
 }
 @media screen and (min-width: 768px) {
     .crew {
-        padding-top: 60px;
+        padding-top: 0;
         &__title {
             font-size: 38px;
             line-height: 46px;

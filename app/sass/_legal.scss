@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 133px;
+    padding-top: 123px;
     padding-bottom: 45px;
     &__title {
         font-weight: 700;
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 768px){
     .legal {
-        padding-top: 258px;
+        padding-top: 198px;
         &__title {
             margin-bottom: 417px;
         }
@@ -60,7 +60,7 @@
     .legal {
         padding-top: 235px;
         &__title {
-            margin-bottom: 289px;
+            margin-bottom: 240px;
         }
     }
 }
@@ -68,7 +68,7 @@
     .legal {
         padding-top: 250px;
         &__title {
-            margin-bottom: 306px;
+            margin-bottom: 255px;
         }
     }
 }

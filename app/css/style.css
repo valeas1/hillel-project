@@ -100,7 +100,7 @@ a {
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   gap: 15px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 10px 15px;
   width: 100%;
 }
 
@@ -319,8 +319,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 38px;
-    padding: 40px 30px 0 30px;
+    padding: 40px 30px 60px 30px;
   }
   .header__wrap {
     background-size: 893px 1024px, cover;
@@ -489,7 +488,7 @@ a {
 
 @media screen and (min-width: 1440px) {
   .header {
-    padding: 40px 30px 0 30px;
+    padding: 40px 30px 60px 30px;
   }
   .header__wrap {
     background-size: 697px 799px, cover;
@@ -507,7 +506,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 133px;
+  padding-top: 123px;
   padding-bottom: 45px;
 }
 
@@ -570,7 +569,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .legal {
-    padding-top: 258px;
+    padding-top: 198px;
   }
   .legal__title {
     margin-bottom: 417px;
@@ -582,7 +581,7 @@ a {
     padding-top: 235px;
   }
   .legal__title {
-    margin-bottom: 289px;
+    margin-bottom: 240px;
   }
 }
 
@@ -591,7 +590,7 @@ a {
     padding-top: 250px;
   }
   .legal__title {
-    margin-bottom: 306px;
+    margin-bottom: 255px;
   }
 }
 
@@ -1828,7 +1827,6 @@ a {
 
 .turn {
   display: grid;
-  padding-top: 35px;
   padding-bottom: 30px;
 }
 
@@ -1894,7 +1892,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .turn {
-    padding-top: 48px;
     padding-bottom: 58px;
   }
   .turn__title {
@@ -2178,7 +2175,7 @@ a {
 }
 
 .crew {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 60px;
 }
 
@@ -2261,7 +2258,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .crew {
-    padding-top: 60px;
+    padding-top: 0;
   }
   .crew__title {
     font-size: 38px;
@@ -2301,7 +2298,7 @@ a {
 }
 
 .worker {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 15px;
 }
 
@@ -2393,7 +2390,7 @@ a {
     display: grid;
     grid-template-columns: 43% 1fr;
     gap: 30px;
-    padding-top: 60px;
+    padding-top: 0;
     padding-bottom: 45px;
   }
   .worker__img {
@@ -2479,7 +2476,7 @@ a {
 }
 
 .contact {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -2588,7 +2585,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .contact {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 }

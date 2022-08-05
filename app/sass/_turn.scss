@@ -1,6 +1,5 @@
 .turn {
     display: grid;
-    padding-top: 35px;
     padding-bottom: 30px;
     &__title {
         font-weight: 700;
@@ -55,7 +54,6 @@
 }
 @media screen and (min-width: 768px) {
     .turn {
-        padding-top: 48px;
         padding-bottom: 58px;
         &__title {
             font-size: 38px;

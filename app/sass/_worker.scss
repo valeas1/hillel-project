@@ -1,5 +1,5 @@
 .worker {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 15px;
     &__img {
         width: 100%;
@@ -71,7 +71,7 @@
         display: grid;
         grid-template-columns: 43% 1fr;
         gap: 30px;
-        padding-top: 60px;
+        padding-top: 0;
         padding-bottom: 45px;
         &__img {
             margin: 0;
