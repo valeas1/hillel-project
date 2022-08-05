@@ -46,6 +46,39 @@
         line-height: 37px;
         margin-bottom: 30px;
     }
+    &--white {
+        align-items: center;
+    }
+    &__nav {
+        display: flex;
+        margin-bottom: 30px;
+        padding: 2px;
+        border-radius: 12px;
+        background-color: var(--grey-separator);
+        &-btn {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: var(--main);
+            border: none;
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 8px 30px 10px 30px;
+            &:not(:last-child) {
+                margin-right: 2px;
+            }
+            &:hover {
+                background-color: var(--grey);
+            }
+            &--active {
+                background-color: #FFFFFF;
+                &:hover {
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    }
     &__grid {
         display: grid;
         gap: 30px;
@@ -92,7 +125,29 @@
             }
         }
     }
-}
+    &__btn {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        background: var(--active-regular);
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border: none;
+        border-radius: 12px;
+        padding: 18px 30px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        transition: 300ms;
+            &:hover {
+                background-color: var(--acvtive-hover);
+            }
+            &:active {
+                background-color: var(--active);
+            }
+        }
+    }
 
 @media screen and (min-width: 768px) {
     .publications {
