@@ -6,6 +6,9 @@
     padding-bottom: 30px;
     &__wrap {
         background-color: var(--grey);
+        &--br {
+            border-radius: 12px 12px 0 0;
+        }
     }
     &__link {
         display: inline-block;
