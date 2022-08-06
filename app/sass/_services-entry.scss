@@ -1,0 +1,108 @@
+.services-entry {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 92px;
+            width: 92px;
+            border-radius: 24px;
+            background-color: #FFFFFF;
+            margin-bottom: 28px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 19px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 28px;
+        }
+        &-btn {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            background: var(--active-regular);
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border: none;
+            border-radius: 12px;
+            padding: 18px 37px;
+            margin-bottom: 30px;
+            transition: 300ms;
+            &:hover {
+                background-color: var(--acvtive-hover);
+            }
+            &:active {
+                background-color: var(--active);
+            }
+        }
+    }
+    &__list {
+        padding-left: 15px;
+        &-wrap {
+            padding-top: 30px;
+            border-top: 4px solid rgba(255, 255, 255, 0.5);
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+        &-item {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #FFFFFF;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &::marker {
+                color: var(--accent);
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .services-entry {
+        padding-top: 0;
+        &__main {
+            &-title {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+            }
+            &-btn {
+                margin-bottom: 60px;
+            }
+        }
+        &__list {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(4, min-content);
+            gap: 15px 60px;
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
