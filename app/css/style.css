@@ -135,6 +135,13 @@ a {
   bottom: -10px;
 }
 
+.header__wrap--no-bg-img {
+  background: var(--gradient-supersoft);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +244,10 @@ a {
   bottom: -7px;
 }
 
+.header__logo-page--dark {
+  color: #FFFFFF;
+}
+
 .header__nav {
   justify-self: end;
 }
@@ -323,6 +334,12 @@ a {
   }
   .header__wrap {
     background-size: 893px 1024px, cover;
+  }
+  .header__wrap--no-bg-img {
+    background: var(--gradient-supersoft);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
   .header__info {
     -webkit-box-align: center;
@@ -468,6 +485,12 @@ a {
   .header__wrap {
     background-size: 670px 768px, cover;
   }
+  .header__wrap--no-bg-img {
+    background: var(--gradient-supersoft);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
   .header__info {
     padding: 11px 15px 11px 15px;
     grid-column: 2 / 3;
@@ -492,6 +515,12 @@ a {
   }
   .header__wrap {
     background-size: 697px 799px, cover;
+  }
+  .header__wrap--no-bg-img {
+    background: var(--gradient-supersoft);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
 }
 
@@ -1064,7 +1093,7 @@ a {
 }
 
 .services__grid-card-title:hover {
-  color: var(--acvtive-hover);
+  color: var(--accent);
 }
 
 .services__grid-card-text {
@@ -1145,7 +1174,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 50px;
-  padding-bottom: 30px;
 }
 
 .team__slider {
@@ -1328,7 +1356,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .client__title {
