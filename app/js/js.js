@@ -24,3 +24,12 @@ function openModal () {
     modal.classList.toggle('is-hidden');
     body.classList.toggle('no-scroll');
 }
+$(document).ready(function(){
+        $('.team__slider').slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            appendDots: $('.team__nav')
+        })
+    }
+)

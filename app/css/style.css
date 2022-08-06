@@ -1185,9 +1185,9 @@ a {
 }
 
 .team__slider-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1360,7 +1360,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .client__title {
@@ -2937,6 +2937,58 @@ a {
   .services-entry__list-item:not(:last-child) {
     margin-bottom: 0;
   }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-dots li {
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--active-regular);
+  opacity: 0.2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.slick-dots li:hover {
+  opacity: 0.6;
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.slick-dots .slick-active {
+  opacity: 1;
+}
+
+.slick-dots .slick-active:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
