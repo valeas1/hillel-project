@@ -8,6 +8,19 @@
     background-color: var(--grey);
     padding: 30px;
     overflow: auto;
+    &__wrap {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: var(--main);
+        overflow: auto;
+    }
+    &__wrap.is-hidden {
+        display: none;
+    }
     &__title {
         font-weight: 700;
         font-size: 30px;

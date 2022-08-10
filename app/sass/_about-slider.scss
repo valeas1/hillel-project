@@ -18,14 +18,14 @@
     }
     &__main {
         align-self: stretch;
-        display: grid;
-        grid-template-columns: repeat(4, 100%);
-        gap: 40px;
-        overflow: auto;
+        // display: grid;
+        // grid-template-columns: repeat(4, 100%);
+        // gap: 40px;
+        // overflow: auto;
         margin-bottom: 5px;
-        &::-webkit-scrollbar { 
-            width: 0px; 
-        }
+        // &::-webkit-scrollbar { 
+        //     width: 0px; 
+        // }
         &-card {
             display: flex;
             justify-content: center;
@@ -69,7 +69,7 @@
 @media screen and (min-width: 768px) {
     .about-slider {
         &__main {
-            grid-template-columns: repeat(4, 1fr);
+            // grid-template-columns: repeat(4, 1fr);
             margin-bottom: 21px;
         }
         &__nav {
