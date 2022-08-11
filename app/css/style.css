@@ -1622,6 +1622,7 @@ a {
 }
 
 .publications__grid-card-title {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -2003,7 +2004,7 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 35px 0;
-  background: url(../img/about-team-bg-img.jpg);
+  background: url(../img/about-team-bg-img.jpg), linear-gradient(264.71deg, #F01432 0%, #323264 29.69%);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2012,7 +2013,7 @@ a {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
   .about-team__header {
-    background: url(../img/about-team-bg-img@2x.jpg);
+    background: url(../img/about-team-bg-img@2x.jpg), linear-gradient(264.71deg, #F01432 0%, #323264 29.69%);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

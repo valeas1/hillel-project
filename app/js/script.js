@@ -78,6 +78,6 @@ $(document).ready(function(){
         for (let i = 0; i < tabsContent.length; i++) {
             tabsContent[i].classList.add('is-hidden');
         }
-        tabsContent[Number(event.target.getAttribute('index'))].classList.remove('is-hidden');
+        tabsContent[Number(event.target.getAttribute('data-index'))].classList.remove('is-hidden');
     }
 })();
