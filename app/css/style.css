@@ -86,6 +86,23 @@ a {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .header__nav-menu.is-hidden {
+    display: none;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+}
+
+.consistent__arcticles-card.is-hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .title {
   color: transparent;
   -webkit-background-clip: text;
@@ -595,19 +612,19 @@ a {
 
 @media screen and (min-width: 1024px) {
   .legal {
-    padding-top: 235px;
+    padding-top: 175px;
   }
   .legal__title {
-    margin-bottom: 240px;
+    margin-bottom: 289px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .legal {
-    padding-top: 250px;
+    padding-top: 190px;
   }
   .legal__title {
-    margin-bottom: 255px;
+    margin-bottom: 306px;
   }
 }
 
@@ -1005,6 +1022,9 @@ a {
   .consistent__nav {
     width: 43%;
   }
+  .consistent__arcticles {
+    margin: -30px 0 0 0;
+  }
 }
 
 .services {
@@ -1285,7 +1305,7 @@ a {
 }
 
 .team__nav {
-  padding-top: 23px;
+  padding-top: 30px;
 }
 
 .team__nav-btn {
@@ -1359,7 +1379,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 80px;
+  padding-top: 62px;
 }
 
 .client__title {
@@ -1558,6 +1578,8 @@ a {
   background-color: transparent;
   border-radius: 10px;
   padding: 8px 30px 10px 30px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .publications__nav-btn:not(:last-child) {
@@ -1610,7 +1632,7 @@ a {
 }
 
 .publications__grid-card-title:hover {
-  color: var(--acvtive-hover);
+  color: var(--accent);
 }
 
 .publications__grid-card-the-date {
@@ -1863,6 +1885,7 @@ a {
 .turn {
   display: grid;
   padding-bottom: 30px;
+  padding-top: 25px;
 }
 
 .turn__title {
@@ -1874,7 +1897,7 @@ a {
 
 .turn__text {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 30px;
   margin-bottom: 20px;
 }
@@ -1928,10 +1951,15 @@ a {
 @media screen and (min-width: 768px) {
   .turn {
     padding-bottom: 58px;
+    padding-top: 0;
+    margin-top: -11px;
   }
   .turn__title {
     font-size: 38px;
     line-height: 46px;
+  }
+  .turn__text {
+    font-size: 20px;
   }
 }
 
@@ -2118,7 +2146,7 @@ a {
 .about-slider__main {
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 .about-slider__main-card {
@@ -2174,7 +2202,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .about-slider__main {
-    margin-bottom: 21px;
+    margin-bottom: 27px;
   }
   .about-slider__nav-btn.is-hidden {
     display: none;
@@ -3044,23 +3072,6 @@ a {
 
 .about-slider .slick-dots .slick-active:hover {
   opacity: 1;
-}
-
-@media screen and (max-width: 767px) {
-  .header__nav-menu.is-hidden {
-    display: none;
-  }
-  .no-scroll {
-    overflow: hidden;
-  }
-}
-
-.consistent__arcticles-card.is-hidden {
-  display: none;
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
