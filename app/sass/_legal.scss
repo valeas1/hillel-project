@@ -33,7 +33,11 @@
         }
     }
 }
-
+@media screen and (min-width: 420px) and (max-width: 767px) {
+    .legal {
+        padding-bottom: 115px;
+    }
+}
 @media screen and (min-width: 768px){
     .legal {
         padding-top: 198px;
